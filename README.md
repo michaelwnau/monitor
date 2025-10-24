@@ -1,5 +1,10 @@
 # monitor
 
+Name: Monitor
+Tagline: Monitor The Situation.
+Core Idea: A real-time dashboard for tracking global information flows—news, weather, and time—through the high-density, data-driven lens of a professional terminal insprired by
+Bloomberg Terminal, ArpaNet, and fictional UIs from film, digital media, and games. Monitor is for journalists, researchers, night owls, and anyone who wants a terminal-like tool to monitor situations.
+
 ## Project Sketch
 ```
 +------------------MONITOR - [LIVE]------------------+-----------------------+

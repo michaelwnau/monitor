@@ -127,14 +127,22 @@ function renderReddit(data) {
   // Add subreddit selector
   const selectorDiv = document.createElement('div');
   selectorDiv.className = 'subreddit-selector';
-  selectorDiv.innerHTML = `
-    <input type="text" id="subreddit-input" value="${currentSubreddit}" placeholder="Enter subreddit...">
-    <button id="subreddit-go" class="btn-search">Go</button>
-  `;
+  
+  const input = document.createElement('input');
+  input.type = 'text';
+  input.id = 'subreddit-input';
+  input.value = currentSubreddit;
+  input.placeholder = 'Enter subreddit...';
+  
+  const goBtn = document.createElement('button');
+  goBtn.id = 'subreddit-go';
+  goBtn.className = 'btn-search';
+  goBtn.textContent = 'Go';
+  
+  selectorDiv.appendChild(input);
+  selectorDiv.appendChild(goBtn);
   container.appendChild(selectorDiv);
   
-  const goBtn = document.getElementById('subreddit-go');
-  const input = document.getElementById('subreddit-input');
   goBtn.addEventListener('click', () => {
     currentSubreddit = input.value || 'programming';
     loadNewsFeed('reddit');

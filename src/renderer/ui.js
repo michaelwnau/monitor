@@ -58,7 +58,11 @@ export function showLoading(containerId) {
 export function showError(containerId, message) {
   const container = document.getElementById(containerId);
   if (container) {
-    container.innerHTML = `<div class="error">Error: ${message}</div>`;
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'error';
+    errorDiv.textContent = `Error: ${message}`;
+    container.innerHTML = '';
+    container.appendChild(errorDiv);
   }
 }
 

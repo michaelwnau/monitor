@@ -1,0 +1,25 @@
+{
+  "theme": "light",
+  "defaultNewsFeed": "hackernews",
+  "defaultSubreddit": "programming",
+  "weatherCity": "London",
+  "clockCities": [
+    {
+      "name": "New York",
+      "timezone": "America/New_York"
+    },
+    {
+      "name": "London",
+      "timezone": "Europe/London"
+    },
+    {
+      "name": "Tokyo",
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "name": "Sydney",
+      "timezone": "Australia/Sydney"
+    }
+  ],
+  "refreshInterval": 300000
+}

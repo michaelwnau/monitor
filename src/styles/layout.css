@@ -1,0 +1,70 @@
+/* Main Grid Layout */
+.main-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+/* Grid positioning */
+.clock-pane {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  min-height: 250px;
+  max-height: 400px;
+}
+
+.weather-pane {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  min-height: 250px;
+  max-height: 400px;
+}
+
+.news-pane {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  min-height: 300px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 1024px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+  }
+  
+  .clock-pane {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    max-height: 300px;
+  }
+  
+  .weather-pane {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    max-height: 300px;
+  }
+  
+  .news-pane {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .clocks-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  
+  .header h1 {
+    font-size: 1.25rem;
+  }
+  
+  .header-controls {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,57 @@
+/* Light Theme (Default) */
+:root,
+body[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-hover: #e0e0e0;
+  --bg-active: #d0d0d0;
+  
+  --text-primary: #202020;
+  --text-secondary: #666666;
+  
+  --border-color: #d0d0d0;
+  
+  --accent-color: #0066cc;
+  --accent-hover: #0052a3;
+  
+  --success-color: #28a745;
+  --success-hover: #218838;
+  
+  --danger-color: #dc3545;
+  --danger-hover: #c82333;
+}
+
+/* Dark Theme */
+body[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-hover: #3d3d3d;
+  --bg-active: #4d4d4d;
+  
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  
+  --border-color: #404040;
+  
+  --accent-color: #4a9eff;
+  --accent-hover: #3a8eef;
+  
+  --success-color: #3fbf61;
+  --success-hover: #2fa951;
+  
+  --danger-color: #ff5566;
+  --danger-hover: #ef4556;
+}
+
+/* Additional theme-specific adjustments */
+body[data-theme="dark"] .clock-time {
+  color: var(--accent-color);
+}
+
+body[data-theme="dark"] .weather-temp {
+  color: var(--accent-color);
+}
+
+body[data-theme="dark"] input[type="text"] {
+  background-color: var(--bg-secondary);
+}
